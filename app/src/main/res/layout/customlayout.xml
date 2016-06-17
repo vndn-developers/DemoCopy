@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/lymain"
+    android:layout_height="110.0dip"
+    android:clickable="true"
+    android:paddingEnd="8.0dip"
+    android:paddingStart="8.0dip">
+
+    <TextView
+        android:id="@+id/tvBookId"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:text="asdkfjafj1324234" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:foreground="?selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/imvThumb"
+            android:layout_width="80.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="6.0dip"
+            android:duplicateParentState="true"
+            android:paddingBottom="4.0dip"
+            android:paddingTop="4.0dip"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvTitleBook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left|top"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/imvThumb"
+            android:duplicateParentState="true"
+            android:text="Giải Tích 12"
+            android:textColor="@color/colorAccent"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleBook"
+            android:layout_gravity="left"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/imvThumb"
+            android:duplicateParentState="true"
+            android:text="Trần Phương"
+            android:textSize="16.0sp" />
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            android:layout_width="wrap_content"
+            android:layout_height="13.0dip"
+            android:layout_below="@id/tvAuthor"
+            android:layout_gravity="center|left|top"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/imvThumb"
+            android:duplicateParentState="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5" />
+
+        <TextView
+            android:id="@+id/numrating"
+            android:layout_width="wrap_content"
+            android:layout_height="16.0dip"
+            android:layout_alignBaseline="@id/rbRating"
+            android:layout_below="@id/tvAuthor"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/rbRating"
+            android:duplicateParentState="true"
+            android:text="( 36 )" />
+
+        <TextView
+            android:id="@+id/tvCost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbRating"
+            android:layout_gravity="left"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_toRightOf="@id/imvThumb"
+            android:duplicateParentState="true"
+            android:text="39.000 đ"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/btnDaMua"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_below="@id/rbRating"
+            android:layout_gravity="left"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_toRightOf="@id/imvThumb"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:text="Đã mua"
+            android:textSize="18.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="9.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>
